@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
 const PORT = 3000
+const mongoose = require('mongoose')
+require('./models/db')
 
-// const mongose = require('mongose')
-app.get('/',(req,res)=>{
-    res.send("Hello world")
-})
+const router = require('./routes/routes')
+//middleware
+app.use('/api/tasks',router)
+
 
 
 app.listen(PORT,(err)=>{
