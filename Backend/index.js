@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 8080
+const PORT = process.end.PORT || 8080
 const mongoose = require('mongoose')
 const cors = require('cors')
 require('./models/db')
