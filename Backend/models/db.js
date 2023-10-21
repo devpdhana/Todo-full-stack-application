@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 async function main()  {
-  await mongoose.connect("mongodb://127.0.0.1:27017/todolistapp");
+  await mongoose.connect("mongodb+srv://devpdhanasekar:Dhana3001@cluster0.bfnh7bp.mongodb.net/todolistapp?retryWrites=true&w=majority");
 };
 try {
     main();
