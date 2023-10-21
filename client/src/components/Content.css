@@ -1,0 +1,80 @@
+.task-lists {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    list-style: none;
+}
+
+.list-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.checkbox-input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-input:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.task {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.task-completed {
+    flex-grow: 1;
+    margin: 0 10px;
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff3333;
+    color: white;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,25 @@
+//post
+GET http://localhost:3000/api/tasks
+
+###
+POST http://localhost:8000/api/tasks
+Content-Type: application/json
+
+{
+    "todo": "welcome to kirikalan magic show1000",
+    "isCompleted" : true
+}
+
+
+###
+PUT http://localhost:3000/api/tasks/6529b4c70dda569f8d17e11d
+Content-Type: application/json
+
+{
+    "id": "6529b4c70dda569f8d17e11d",
+    "todo": "Hii",
+    "isCompleted": false
+}
+
+###
+DELETE http://localhost:3000/api/tasks/
